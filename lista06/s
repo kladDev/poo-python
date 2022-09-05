@@ -1,0 +1,113 @@
+# Antonio Claudio Teixeira Alves
+
+# Crie uma função que recebe como parâmetro
+# um número inteiro e devolve o seu dobro.
+
+def separador():
+    print("-"*15)
+
+def dobro(valor):
+    return valor * 2
+
+separador()
+print("\tDOBRO")
+separador()
+
+valor = int(input("Digite o valor: "))
+valor = dobro(valor)
+print(f"Seu dobro é {valor}")
+# Antonio Claudio Teixeira Alves
+
+# Faça uma função que receba dois números
+# e retorne qual deles é o maior
+
+def separador():
+    print("-"*15)
+
+def maior_valor(valor1, valor2):
+    if valor1 > valor2:
+        return valor1
+    elif valor2 > valor1:
+        return valor2
+    else:
+        return valor1
+
+separador()
+print("MAIOR VALOR")
+separador()
+
+valor1 = float(input("Valor 01: "))
+valor2 = float(input("Valor 02: "))
+maior = maior_valor(valor1, valor2)
+
+print(f"Foram lidos {valor1:.2f} e {valor2:.2f}\nO maior valor é {maior:.2f}")
+# Antonio Claudio Teixeira Alves
+
+# Faça uma função para verificar se um
+# número é positivo ou negativo. Sendo
+# que o valor de retorno será 1 se positivo,
+# -1 se negativo e O se for igual a 0.
+
+def separador():
+    print("-"*20)
+
+def verificar_numero(valor):
+    if valor == 0:
+        return 0
+    elif valor > 0:
+        return 1
+    else:
+        return -1
+
+separador()
+print("Verificar de numero")
+separador()
+
+valor = int(input("Digite um valor: "))
+valor = verificar_numero(valor)
+print(f"O retorno é {valor}")
+# Antonio Claudio Teixeira Alves
+import math
+
+
+# Faça uma função que receba a altura e
+# o raio de um cilindro circular e retorne
+# o volume do cilindro
+
+def separador():
+    print("-"*15)
+
+def volume_do_cilindro(altura, raio):
+    return math.pi * pow(raio, 2) * altura
+
+separador()
+print("VOLUME DO CILINDRO")
+separador()
+
+raio = float(input("Raio: "))
+altura = float(input("Altura: "))
+volume = volume_do_cilindro(altura, raio)
+
+print(f"O volume do cilindro é {volume:.2f}")
+# Antonio Claudio Teixeira Alves
+import math
+
+
+# Faça uma função e um programa de
+# teste para o cálculo do volume de
+# uma esfera. Sendo que o raio é
+# passado por parâmetro
+
+def separador():
+    print("-"*20)
+
+def volume_da_esfera(raio):
+    return math.pi * pow(raio, 3) * 4/3
+
+separador()
+print("Volume da esfera")
+separador()
+
+raio = float(input("Digite o RAIO da esfera: "))
+volume = volume_da_esfera(raio)
+print(f"O volume da esfera é {volume:.2f}")
