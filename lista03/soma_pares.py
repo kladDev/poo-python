@@ -4,14 +4,14 @@
 # 50 primeiros números pares
 
 i = 0
-quantidade_pares = 0
-somar_valores = 0
+number_pairs = 0
+sum_values = 0
 
-while quantidade_pares <= 50:
-    i+=1
+while number_pairs <= 50:
+    i += 1
     if i % 2 == 0:
         print(i, end=" ")
-        quantidade_pares += 1
-        somar_valores += i
+        number_pairs += 1
+        sum_values += i
 print("")
-print(f"A soma dos 50 primeiros números pares é {somar_valores}")
+print(f"A soma dos 50 primeiros números pares é {number_pairs}")
