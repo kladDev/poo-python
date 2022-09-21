@@ -92,11 +92,15 @@ def sub_interface(conta_atual):
 
         elif opcao == 3:
 
-            print("3")
+            mostrar_saldo(conta_atual)
 
         elif opcao == 4:
 
-            print("4")
+            valor = float(input("Deseja depositar quantos R$ "))
+            if (valor > 0):
+                depositar_dinheiro(conta_atual, valor)
+            else:
+                print("[ERRO] Impossível depositar valores negativos")
 
         elif opcao == 5:
 
@@ -153,15 +157,31 @@ def remover_conta(conta):
 '''
 
 def transferir_saldo(conta_atual, conta_recebedora, valor):
-    if conta_atual["saldo"] <= valor:
-        conta_recebedora["saldo"] += valor
-        conta_atual["saldo"] -= valor
+    if valor <= conta_atual["saldo"] and valor > 0:
+        for i in lista_contas:
+            if i == conta_atual:
+                conta_atual["saldo"] -= valor
+            if i == conta_recebedora:
+                conta_recebedora["saldo"] += valor
+        print("Transferência feita com sucesso!")
     else:
         print(f"[ERRO] Você não possui esse valor {valor}")
 
+'''
+    Criar uma função para exibir o saldo de 
+    uma conta especifica
+'''
+
+def mostrar_saldo(conta_atual):
+    print(f'Você possui R${conta_atual["saldo"]}')
+
+'''
+    Criar uma função para depositar uma quantia
+    na conta escolhida
+'''
+
+def depositar_dinheiro(conta_atual, valor):
+    conta_atual["saldo"] += valor
+    print("Valor depositado com sucesso!")
 
 interface()
-
-
-
-
