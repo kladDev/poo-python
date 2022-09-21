@@ -10,9 +10,9 @@ separador()
 print("Decomposição de número")
 separador()
 
-valor = int(input("Digite um valor (100 e 999): "))
+value = int(input("Digite um valor (100 e 999): "))
 
-if valor >= 100 and valor <= 999:
-    print(f"Centena {valor//100}")
-    print(f"Dezena {valor//10 - 10}")
-    print(f"Unidade {valor%10}")
+if value >= 100 and value <= 999:
+    print(f"Centena {value//100}")
+    print(f"Dezena {value//10 - 10}")
+    print(f"Unidade {value%10}")
