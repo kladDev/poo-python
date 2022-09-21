@@ -2,10 +2,10 @@
 
 # Faça um programa que peça ao usuário para digitar 10 valores e some-os
 
-soma = 0
+sum = 0
 
-for i in range(0, 10, 1):
-    valores = float(input(f"Digite {i+1}º valor: "))
-    soma += valores
+for i in range(10):
+    values = float(input(f"Digite {i+1}º valor: "))
+    sum += values
 
-print(f"A soma é {soma:.2f}")
+print(f"A soma é {sum:.2f}")
