@@ -12,15 +12,14 @@ separador()
 print("Sequência de Fibonacci")
 separador()
 
-valor = int(input("Digite até o número desejado: "))
+value = int(input("Digite até o número desejado: "))
 
-anterior = 0
-proximo = 1
+previous = 0
+next = 1
 fibonacci = 0
 
-for i in range(0, valor, 0):
+for i in range(0, value, 0):
     print(fibonacci, end=" ")
-    anterior = proximo + fibonacci
-    proximo = fibonacci
-    fibonacci = anterior
-
+    previous = next + previous
+    next = fibonacci
+    fibonacci = previous
