@@ -10,10 +10,10 @@ separador()
 print("Contador de números pares")
 separador()
 
-valor_par = int(input("Digite um valor par: "))
+number_pair = int(input("Digite um valor par: "))
 
-if valor_par % 2 == 0:
-    for i in range(0, valor_par+1, 2):
+if number_pair % 2 == 0:
+    for i in range(0, number_pair+1, 2):
         print(i, end=" ")
 else:
     print("[ERRO] número inválido")
