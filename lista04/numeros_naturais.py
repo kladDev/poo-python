@@ -9,8 +9,8 @@ def separador():
 separador()
 print("Primeiros números naturais ímpares")
 separador()
-valor = int(input("Digite o limite: "))
+value = int(input("Digite o limite: "))
 
-for i in range(1, valor, 1):
-    if i % 2 != 0 and valor >= 0:
+for i in range(1, value, 1):
+    if i % 2 != 0 and value >= 0:
         print(i, end=" ")
