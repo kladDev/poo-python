@@ -11,18 +11,18 @@ separador()
 print("Maior Número")
 separador()
 
-quantidade_de_numeros = int(input("Deseja digitar quantos números? "))
-vezes_lida_maior = 0
+number_quantity = int(input("Deseja digitar quantos números? "))
+times_read_biggest = 0
 
 
-for i in range(0, quantidade_de_numeros, 1):
-    valores = int(input(f"Digite o {i+1}º valor: "))
+for i in range(0, number_quantity, 1):
+    value = int(input(f"Digite o {i+1}º valor: "))
 
     if i == 0:
-        maior_valor = valores
+        biggest_number = value
 
-    if valores > maior_valor:
-        maior_valor = valores
-        vezes_lida_maior += 1
+    if value > biggest_number:
+        biggest_number = value
+        times_read_biggest += 1
 
-print(f"O maior valor é {maior_valor} e foi lido {vezes_lida_maior}")
+print(f"O maior valor é {biggest_number} e foi lido {times_read_biggest}")
