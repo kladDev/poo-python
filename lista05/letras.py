@@ -7,8 +7,8 @@ def separador():
     print("-"*25)
 
 
-caracteres = []
-caracteres_consoantes = []
+character = []
+consonants = []
 
 separador()
 print("Leitor de caracteres")
@@ -20,16 +20,15 @@ print("")
 print("Digite 10 caracteres abaixo")
 
 for i in range(0, 10, 1):
-    letra = input(f"{i+ 1}º caractere: ")[0]
-    caracteres.append(letra.lower())
+    letter = input(f"{i+ 1}º caractere: ")[0]
+    character.append(letra.lower())
 
-print(caracteres)
+print(character)
 
 for i in "bcdfghjklmnpqrstvwxyz":
-    for j in range(0, 10, 1):
-        if i == caracteres[j]:
-            caracteres_consoantes.append(caracteres[j])
+    for j in range(10):
+        if i == character[j]:
+            consonants.append(caracteres[j])
 
-print(f"Foram lidas {len(caracteres_consoantes)} consoantes")
-print(caracteres_consoantes)
-
+print(f"Foram lidas {len(consonants)} consoantes")
+print(consonants)
