@@ -5,28 +5,28 @@
 # a média de cada aluno, imprima o número de alunos
 # com média maior ou igual a 7.0
 
-notas_de_alunos = []
-medias_dos_alunos = []
-quantidade_de_aluno = 3
-soma = 0
-aprovados = 0
+student_grades = []
+student_averages = []
+quantity_student = 3
+sum = 0
+approved = 0
 
-for i in range(0, quantidade_de_aluno, 1):
+for i in range(quantity_student):
     print("")
     print(f"Notas do aluno {i + 1}")
-    notas = []
+    grades = []
     for j in range(0, 4, 1):
-        notas.append(float(input(f"Nota {j + 1}: ")))
-        soma += notas[j]
+        grades.append(float(input(f"Nota {j + 1}: ")))
+        sum += notas[j]
 
-    notas_de_alunos.append(notas)
-    medias_dos_alunos.append(soma)
-    soma = 0
+    student_grades.append(notas)
+    student_averages.append(soma)
+    sum = 0
 
 print("")
-for i in range(0, quantidade_de_aluno, 1):
-    if (medias_dos_alunos[i] / 4) >= 7:
-        print(notas_de_alunos[i])
-        aprovados += 1
+for i in range(quantity_student):
+    if (student_averages[i] / 4) >= 7:
+        print(student_grades[i])
+        approved += 1
 
-print(f"Foram aprovado {aprovados} alunas(os)")
+print(f"Foram aprovado {approved} alunas(os)")
