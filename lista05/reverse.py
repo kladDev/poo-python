@@ -6,7 +6,7 @@
 def separador():
     print("-"*30)
 
-lista = []
+list = []
 
 separador()
 print("Mostrar lista em ordem reversa")
@@ -14,7 +14,7 @@ separador()
 print("Digite 10 números abaixo")
 
 for i in range(0, 10, 1):
-    lista.append(float(input(f"Valor {i + 1}: ")))
+    list.append(float(input(f"Valor {i + 1}: ")))
 
-lista.reverse()
-print(lista)
+list.reverse()
+print(list)
