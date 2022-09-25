@@ -12,20 +12,20 @@ separador()
 print("Lista de números pares e ímpares")
 separador()
 
-valores = []
-valores_par = []
-valores_impares = []
+values = []
+value_pair = []
+value_odd = []
 
 print("Digite 20 pares a seguir")
 for i in range(0, 20, 1):
 
-    valores.append(int(input(f"Valor {i+ 1}: ")))
+    values.append(int(input(f"Valor {i+ 1}: ")))
 
     if(valores[i] % 2 == 0):
-        valores_par.append(valores[i])
+        value_pair.append(value[i])
     else:
-        valores_impares.append(valores[i])
+        value_odd.append(value[i])
 
-print(f"Valores digitados {valores}")
-print(f"Valores pares {valores_par}")
-print(f"Valores impares {valores_impares}")
+print(f"Valores digitados {value}")
+print(f"Valores pares {value_pair}")
+print(f"Valores impares {value_odd}")
