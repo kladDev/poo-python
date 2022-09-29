@@ -9,15 +9,15 @@ import math
 def separador():
     print("-"*15)
 
-def volume_do_cilindro(altura, raio):
-    return math.pi * pow(raio, 2) * altura
+def volume_do_cilindro(height, radius):
+    return math.pi * pow(radius, 2) * height
 
 separador()
 print("VOLUME DO CILINDRO")
 separador()
 
-raio = float(input("Raio: "))
-altura = float(input("Altura: "))
-volume = volume_do_cilindro(altura, raio)
+radius = float(input("Raio: "))
+height = float(input("Altura: "))
+volume = volume_do_cilindro(height, raio)
 
 print(f"O volume do cilindro é {volume:.2f}")
