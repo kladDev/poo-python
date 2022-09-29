@@ -8,10 +8,10 @@
 def separador():
     print("-"*20)
 
-def verificar_numero(valor):
-    if valor == 0:
+def verificar_numero(value):
+    if value == 0:
         return 0
-    elif valor > 0:
+    elif value > 0:
         return 1
     else:
         return -1
@@ -20,6 +20,6 @@ separador()
 print("Verificar de numero")
 separador()
 
-valor = int(input("Digite um valor: "))
-valor = verificar_numero(valor)
+value = int(input("Digite um valor: "))
+value = verificar_numero(valor)
 print(f"O retorno é {valor}")
