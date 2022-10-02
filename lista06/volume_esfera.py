@@ -10,13 +10,13 @@ import math
 def separador():
     print("-"*20)
 
-def volume_da_esfera(raio):
-    return math.pi * pow(raio, 3) * 4/3
+def volume_da_esfera(radius):
+    return math.pi * pow(radius, 3) * 4/3
 
 separador()
 print("Volume da esfera")
 separador()
 
-raio = float(input("Digite o RAIO da esfera: "))
-volume = volume_da_esfera(raio)
+radius = float(input("Digite o RAIO da esfera: "))
+volume = volume_da_esfera(radius)
 print(f"O volume da esfera é {volume:.2f}")
