@@ -16,9 +16,9 @@ def limpar():
     os.system('clear')
 
 def interface():
-        sair = 0
+        out = 0
 
-        while sair != 3:
+        while out != 3:
 
             print("[1] - Cadastrar nova conta")
             print("[2] - Encontrar uma conta")
@@ -48,16 +48,16 @@ def interface():
 
             elif opcao == 3:
 
-                sair = 3
+                out = 3
 
             else:
 
                 print("[ERRO] Opcao inválida")
 
 def sub_interface(conta_atual):
-    sair = 0
+    out = 0
 
-    while sair != 5:
+    while out != 5:
         print("[1] - Remover conta")
         print("[2] - Realizar transferência")
         print("[3] - Exibir saldo")
@@ -70,7 +70,7 @@ def sub_interface(conta_atual):
 
             remover_conta(conta_atual)
             interface()
-            sair = 5
+            out = 5
 
         elif opcao == 2:
 
@@ -104,7 +104,7 @@ def sub_interface(conta_atual):
 
         elif opcao == 5:
 
-            sair = 5
+            out = 5
             limpar()
             interface()
 
