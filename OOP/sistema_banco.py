@@ -2,6 +2,14 @@ class Pix:
     def __init__(self, pix: str):
         self.chave = pix
 
+class Corrente:
+    def taxa(Conta):
+        return super().taxa()*5
+
+class Poupanca:
+    def taxa(Conta):
+        return super().taxa()*0.25
+
 class Conta:
     def __init__(self, numero_conta: int, agencia: str, valor: float):
         self.__conta = numero_conta
@@ -41,8 +49,14 @@ class Conta:
         print(f"Seu saldo é {self.__valor}")
 
     def transferencia(self, valor, Conta):
-        self.__valor -= valor
-        Conta.__valor += valor
+        if self.__valor >= valor and valor > 0:
+            self.__valor -= valor + self.taxa()
+            Conta.__valor += valor
+        else:
+            print('Saldo insuficiente x(')
+
+    def taxa(self):
+        return 2.0
 
     def adicionar_chave_pix(self, chave: str):
         pix = Pix(chave)
@@ -79,8 +93,11 @@ class Cliente:
         self.contatos.append(contato)
 
     def mostrar_contatos(self):
-        for i in self.contatos:
-            print(i.nome, i.telefone)
+        if(len(self.contatos) == 0):
+            print('Lista Vazia')
+        else:
+            for i in self.contatos:
+                print(i.nome, i.telefone)
 
 c = Cliente("Atento")
 c.nome = "thsdhd"
@@ -92,8 +109,3 @@ print(c.conta.valor)
 print(c.nome, c.conta.chave_pix, c.conta.valor)
 c.mostrar_contatos()
 c.conta.mostrar_pix()
-
-
-
-
-
